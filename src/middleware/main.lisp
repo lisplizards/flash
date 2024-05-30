@@ -27,7 +27,6 @@
                                              flash-data)))
           (declare (type list flash-data)
                    (type foo.lisp.flash/state:flash-state foo.lisp.flash:*flash*))
-          (setf (getf env :flash) foo.lisp.flash:*flash*)
           (let ((response (funcall app env)))
             (declare (type list response)
                      (type foo.lisp.flash/state:flash-state foo.lisp.flash:*flash*))
