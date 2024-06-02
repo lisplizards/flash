@@ -22,9 +22,8 @@ Lack Builder:
   *app*)
 ```
 
-The middleware adds `:FLASH` to the Clack environment and dynamically binds
-`FOO.LISP.FLASH:*FLASH*`. The `FOO.LISP.FLASH` package defines functions
-used to operate on this flash-state object.
+The middleware dynamically binds special variable `FOO.LISP.FLASH:*FLASH*`. The
+`FOO.LISP.FLASH` package defines functions used to operate on this flash-state object.
 
 ## Installation
 
